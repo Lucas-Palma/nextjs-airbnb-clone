@@ -6,10 +6,11 @@ import CategoryBox from "./CategoryBox";
 import { usePathname, useSearchParams } from "next/navigation";
 
 import { TbBeach, TbPool, TbMountain } from 'react-icons/tb';
-import { GiBoatFishing, GiCactus, GiCastle, GiCaveEntrance, GiForestCamp, GiIsland, GiWindmill } from 'react-icons/gi';
+import { GiBarn, GiBoatFishing, GiCactus, GiCastle, GiCaveEntrance, GiForestCamp, GiIsland, GiWindmill } from 'react-icons/gi';
 import { MdOutlineVilla } from 'react-icons/md'
 import { FaSkiing } from 'react-icons/fa'
 import { BsSnow } from 'react-icons/bs'
+import { IoDiamond } from 'react-icons/io5'
 
 export const categories = [
     {
@@ -78,9 +79,14 @@ export const categories = [
         description: 'This property is in a cave!'
     },
     {
-        label: 'Desert',
-        icon: GiCactus,
-        description: 'This property is in the desert!'
+        label: 'Barns',
+        icon: GiBarn,
+        description: 'This property is in the barn'
+    },
+    {
+        label: 'Lux',
+        icon: IoDiamond,
+        description: 'This property is luxurious!'
     },
 ]
 
