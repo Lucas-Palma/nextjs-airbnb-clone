@@ -101,7 +101,7 @@ const Categories = () => {
         return null;
     }
 
-  return (
+  return ( 
     <Container>
         <div
             className="
