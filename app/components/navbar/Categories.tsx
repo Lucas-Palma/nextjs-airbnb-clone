@@ -34,11 +34,6 @@ export const categories = [
         description: 'This property is in the countryside!'
     },
     {
-        label: 'Pools',
-        icon: TbPool,
-        description: 'This property has a pool!'
-    },
-    {
         label: 'Islands',
         icon: GiIsland,
         description: 'This property is on an island!'
