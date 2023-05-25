@@ -9,13 +9,13 @@ import useLoginModal from "./useLoginModal";
 
 interface IUseFavorite {
   listingId: string;
-  currentUser?: SafeUser | null
+  currentUser?: SafeUser | null;
 }
 
 const useFavorite = ({ listingId, currentUser }: IUseFavorite) => {
   const router = useRouter();
 
-  const loginModal = useLoginModal();
+  const loginModal = useLoginModal(); 
 
   const hasFavorited = useMemo(() => {
     const list = currentUser?.favoriteIds || [];

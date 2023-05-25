@@ -1,8 +1,7 @@
 'use client';
 
 import useCountries from "@/app/hooks/useCountries";
-import { SafeListing, SafeUser } from "@/app/types";
-import { Reservation } from "@prisma/client"
+import { SafeListing, SafeReservation, SafeUser } from "@/app/types";
 import { format } from "date-fns";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -12,7 +11,7 @@ import Button from "../Button";
 
 interface ListingCardProps {
     data: SafeListing;
-    reservation?: Reservation;
+    reservation?: SafeReservation;
     onAction?: (id: string) => void;
     disabled?: boolean;
     actionLabel?: string;
@@ -36,10 +35,10 @@ const ListingCard: React.FC<ListingCardProps> = ({
 
     const handleCancel = useCallback(
         (e: React.MouseEvent<HTMLButtonElement>) => {
-            e.stopPropagation();
+            e.stopPropagation(); 
 
             if (disabled) {
-                return;
+                return;   
             }
 
             onAction?.(actionId);
@@ -71,7 +70,7 @@ const ListingCard: React.FC<ListingCardProps> = ({
         className="col-span-1 cursor-pointer group"
     >
         <div className="flex flex-col gap-2 w-full">
-            <div 
+            <div  
                 className="
                     aspect-square
                     w-full
@@ -111,7 +110,7 @@ const ListingCard: React.FC<ListingCardProps> = ({
                 </div>
                 {!reservation && (
                     <div className="font-light">night</div>
-                )}
+                )} 
             </div>
             {onAction && actionLabel && (
                 <Button
