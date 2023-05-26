@@ -2,8 +2,6 @@ This is a repository for a Full Stack Airbnb Clone with Next.js 13 App Router: R
 
 Features:
 
-Features:
-
 Tailwind design
 Credential authentication
 Github and Google authentication
@@ -17,3 +15,5 @@ Owner reservation cancellation
 Creation and deletion of properties
 Advanced search algorithm by category, date range, map location, number of guests, rooms and bathrooms
 POST and DELETE routes in route handlers (app/api)
+
+Demo: https://rent-app-three.vercel.app/
